@@ -1,0 +1,614 @@
+.tourlist_nav{
+    background:#024602;
+}
+
+.forest_explore{
+    width: 100%;
+    height: 32rem;
+    position: relative;
+}
+
+.forest_image{
+    width: 100%;
+    height: 32rem;
+    position: absolute;
+}
+
+.forest_explore_content{
+    position: absolute;
+    top:140px;
+    left:220px;
+    color: white;
+}
+
+.explore_para1{
+    font-size: 34px;
+}
+
+.explore_para2{
+    font-size: 60px;
+}
+
+.Tours{
+    width: 100%;
+    padding: 8%;
+    text-align: center;
+}
+.tour_heading{
+    font-size: 36px;
+}
+
+.hover_animation{
+    background: #e6e5e5;
+    padding: 150px;
+}
+.badges{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 50px;
+    gap:20px ;
+}
+
+.badge_contents{
+    background: lightgrey;
+   padding: 40px 56px;
+}
+.badge{
+    width:120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #84c084;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge i{
+    font-size: 60px;
+}
+
+.badge_differ{
+    background: #058f05;
+    color: white;
+    font-weight: bold;
+}
+.badge_contents:hover{
+    background: yellowgreen;
+}
+
+
+.cards{
+    position: relative;
+    display:inline-grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: 400px;
+    text-align: initial;
+    box-shadow:0 8px 8px rgba(0,0,0,0.7);
+    margin-bottom: 40px;
+}
+
+.side_image{
+    grid-area: 1 / 1 / 3 / 2;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+}
+.travel_data_list{
+    list-style: none;
+    left:0;
+    top:0;
+}
+
+.travel_data{
+    grid-area: 2 / 1 / 4 / 2;
+   padding: 10px;
+   display: none;
+   background-color:#c4c3c3;
+}
+
+.travel_data_list i{
+    font-size:14px;
+}
+
+.travel_data_list>:not(:last-child){
+    border-bottom: 3px solid lightgray ;
+}
+
+.travel_data_list li{
+    padding: 16px 0;
+}
+
+.tour_cards{
+    padding: 20px;
+    grid-area: 1 / 2 / 3 / 2;
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "about price"
+        "para para"
+        "rate icons";
+    row-gap: 20px;
+}
+.tour_card_items{
+    grid-area: about;
+}
+
+.price_card_items{
+    text-align: right;
+    grid-area: price;
+}
+.prices{
+    background: #02a002;
+    padding: 12px;
+    font-size: 20px;
+    color: white;
+}
+
+.cost{
+    color: #9e9e9e;
+}
+.tour_cards i{
+    font-size: 12px;
+}
+
+.description_card_items{
+    grid-area: para;
+    padding-left: 2rem;
+    border-left: 4px solid #d1d1d1;
+}
+
+.review_card_items{
+    grid-area: rate;
+}
+.icon_card_items{
+    grid-area: icons;
+}
+
+
+.paragraph_hover{
+    display: none;
+}
+
+.book_now_button{
+    display: none;
+} 
+
+.cards:hover{
+    grid-template-columns:repeat(2,1fr);  
+    grid-template-rows: 500px 500px;
+    z-index: 100;
+}
+
+
+.cards:hover .side_image{
+    grid-area: 1/1/2/2;
+}
+
+.cards:hover .travel_data{
+    display: block;
+}
+
+.cards:hover .paragraph_hover{
+    display: block;
+}
+
+.cards:hover .icon_card_items{
+    display: none;
+}
+
+.cards:hover .book_now_button{
+    display: block;
+    padding: 20px;
+    width: 150px;
+    height: 60px;
+    text-align: center;
+}
+
+.backdrop{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;    
+    content: "";
+    z-index: 99;
+    background-color: rgba(0,0,0,0.7);
+    height: 100vh;
+    width: 100vw;
+}
+
+.main_card:hover+.backdrop{
+    display: block;
+}
+
+
+.book_button{
+    margin-top: 60px;
+text-align: center;
+}
+.book_now{
+    text-decoration: none;
+    color: white;
+    background:yellowgreen;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.book_now:hover{
+    background:#037003;
+
+}
+
+.image_hover{
+    padding: 10%;
+    width: 100%;
+}
+
+.hover_image_items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "item_1 item_2 item_3";
+    gap: 10px;
+    position: relative;
+    height: 40vh;
+}
+
+.hover_image_item_1{
+    position: relative;
+    grid-area: item_1;
+}
+
+.hover_image_item_2{
+    position: relative;
+    grid-area: item_2;
+}
+
+.hover_image_item_3{
+    position: relative;
+    grid-area:item_3;
+}
+
+.images{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    height: 40vh;
+}
+
+
+    .container{
+        top:120px;
+        position: relative;
+        width: 100%;
+        left:30px;
+        transition: -8s ease;
+        line-height: 1.6;
+        overflow: hidden;
+        color: white;
+    }
+
+.container_heading{
+    font-size: 30px;
+}
+
+.price{
+    background-color: #10b810;
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+.places{
+    position: absolute;
+}
+
+.container:hover .images{
+    top:0;
+    overflow: visible;
+    height: 100%;
+    transition: 0.8s;
+    filter: brightness(50%);
+}
+
+.images:hover {
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+transition: 0.8s;
+
+}
+
+.figure:hover .container{
+top:0;
+overflow: visible;
+transition: 0.8s;
+}
+
+
+
+@media(max-width:1200px)
+{
+
+    .forest_explore_content{
+        left:100px;
+    }
+
+    .Tours{
+        padding: 70px;
+    }
+
+    .tour_heading{
+        font-size: 30px;
+    }
+    .Tours p{
+        font-size: 14px;
+    }
+
+    .badge i{
+        font-size: 50px;
+    }
+
+    .badge_contents{
+        padding: 30px 40px;
+    }
+
+    .badge{
+        width: 100px;
+        height: 100px;
+    }
+    .badge_contents p{
+        font-size: 14px;
+    }
+
+    .prices{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+   .cards:hover .book_now_button{
+        font-size: 14px;
+        padding: 10px;
+        height: 40px;
+    }
+
+    .main_card{
+        grid-template-columns: 240px 600px;
+    
+    }
+
+    .cards{
+        grid-template-columns:repeat(2,1fr);  
+        grid-template-rows: 250px;
+    }
+
+    .tour_cards{
+        font-size: 14px;
+    }
+    .travel_data{
+        font-size: 12px;
+    }
+
+    .book_now{
+        font-size: 14px;
+        font-size: 400;
+        padding: 16px 20px;
+    }
+
+    .hover_image_items{
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+    
+    .images{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+    }
+
+    .container{
+        top:180px;
+        line-height: 1.4;
+    }
+    
+ .container_heading{
+    font-size: 26px;
+ }
+
+ .price, .place, .time{
+    font-size: 16px;
+ }
+}
+@media(max-width:900px) {
+    .Tours{
+        padding: 40px;
+    }
+
+.explore_para1{
+    font-size: 30px;
+}
+
+.explore_para2{
+    font-size: 50px;
+}
+
+.badges{
+    justify-content: space-around;
+}
+.badge_contents{
+    padding: 30px;
+ }
+ .badge{
+     width:90px;
+     height: 90px;
+     border-radius: 50%;
+ }
+
+ .badge_contents p{
+    font-size: 10px;
+ }
+ 
+ .badge i{
+     font-size: 30px;
+ }
+
+ .hover_animation{
+    padding: 40px;
+}
+
+.cards{
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows: 14rem 28rem;
+    grid-template-areas: 
+    "image"
+    "card";
+}
+
+.side_image{
+    grid-area: image;
+}
+
+.tour_cards{
+    grid-area: card;
+}
+
+.cards:hover {
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows: 14rem 44rem;
+}
+
+.badge_contents{
+   padding: 30px 46px;
+}
+.badge{
+    width:120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+
+.badge i{
+    font-size: 50px;
+}
+
+
+.hover_image_items{
+    grid-template-columns: repeat(1,1fr);
+    height: 120vh;
+    grid-template-areas: 
+    "item_1" 
+    "item_2" 
+    "item_3";
+    gap: 10px;
+}
+
+
+}
+
+@media (max-width:600px) {
+    .Tours{
+        padding: 30px;
+    }
+    
+    .forest_explore_content{
+        top:60px;
+        left:20px;
+        right: 20px;
+        text-align:center ;
+    }
+    .tour_heading{
+        font-size: 30px;
+    }
+
+    .main_card{
+        padding: 0px;
+    }
+    .cards{
+        grid-template-rows: 20rem 42rem;
+
+    }
+    .tour_cards{
+        text-align: center;
+        grid-template-columns:repeat(1,1fr);
+        grid-template-rows: 5;
+        grid-template-areas: 
+        "about"
+        "price"
+        "para"
+        "rate"
+        "icons";
+        font-size: 12px;
+    }
+    .price_card_items{
+        text-align: center;
+    }
+
+   .cards:hover{
+    grid-template-rows: 20rem 58rem;
+}
+.book_now{
+    padding: 20px;
+    font-size: 16px;
+}
+
+.badges{
+    justify-content: space-around;
+}
+.badge_contents{
+    padding: 5%;
+ }
+ .badge{
+     width:90px;
+     height: 90px;
+     border-radius: 50%;
+ }
+
+ .badge_contents p{
+    font-size: 10px;
+ }
+ 
+ .badge i{
+     font-size: 30px;
+ }
+
+.hover_image_items{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,30%);
+    grid-template-areas: 
+    "item_1" 
+    "item_2" 
+    "item_3";
+    gap: 10px;
+}
+
+
+.images{
+    width: 100%;
+    height: 100%;
+}
+
+.container_heading{
+    font-size: 22px;
+}
+}
+
+@media(max-width:350px) {
+      
+    .forest_explore_content{
+        top:30px;
+        left:10px;
+        right: 10px;
+    }
+
+    .Tours{
+        padding: 20px;
+    }
+    
+   .cards:hover{
+    grid-template-rows: 20rem 72rem;
+}
+    
+}

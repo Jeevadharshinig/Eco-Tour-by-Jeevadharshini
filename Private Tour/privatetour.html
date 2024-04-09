@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../shared.css" rel="stylesheet">
+    <link href="privatetour.css" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" >
+    <title>Private Tour-Eco Tour</title>
+</head>
+<body>
+    <header class="main_header">
+        <div>
+            <button class="menu_button">
+                <span class="menu_bar"></span>
+                <span class="menu_bar"></span>
+                <span class="menu_bar"></span>
+            </button>
+            <img src="../images/logo1.png" alt="eco_tour_logo">
+            <h4 class="get_in_touch"><i class="fa-sharp fa-solid fa-phone"></i>  GET IN TOUCH</h4>
+        </div>
+    </header>
+    <div class="nav_box">
+        <span class="close_button">x</span>
+    <nav class="mobile_nav">
+        <ul class="mobile_lists">
+            <li class=" mobile_list_item home_nav">
+                <a href="../home.html">HOME</a>
+            </li> 
+             <li class=" mobile_list_item destination_nav">
+                <a href="../Destination/destination.html">DESTINATION</a>
+            </li>
+            <li class="mobile_list_item privatetour_nav">
+                <a href="privatetour.html">PRIVATE TOUR</a>
+            </li>
+            <li class="mobile_list_item singletour_nav">
+                <a href="../Single Tour/singletour.html">SINGLE TOUR</a>
+            </li>
+            <li class="mobile_list_item tourlist_nav">
+                <a href="../Tour List/tourlist.html">TOUR LIST</a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+    
+    <main>
+        <section class="private_tour">
+            <img src="../Lazyimage/jpeg-optimizer_city_images.jpg" data-src="../images/city_images.jpg" alt="san_image" class="private_tour_image image_lazy">
+            <div class="private_tour_content">
+                <p class="private_tour_para1">RECEIVE VIP TREATMENT</p>
+                <P class="private_tour_para2">Private Tours</P>
+            </div>
+        </section>
+
+        <section class="private_trips">
+            <div class="private_day_trip">
+                <h1 class="private_day_title">Privatize Any of Our Daytrips </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ipsa soluta tempore nam cum quas corrupti voluptatem veniam magnam ea vel eum, minus esse.</p>
+            </div>
+            <div class="private_trip_varietis">
+                <div class="private_trip_variety_1">
+                    <h1 class="trip_variety_title">Tailor Made Trips</h1>
+                    <p>Lorem ipsum dolor sit, amet vero totam eos, vel consectetur quae. Atque ratione ad dolore, cupiditate nemo omnis iure architecto,
+                         dolor, commodi vero perspiciatis rerum?</p>
+                </div>
+                <div class="private_trip_variety_2">
+                    <h1 class="trip_variety_title">Groups</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto animi, debitis eum officiis a perspiciatis, fugit laudantium amet magnam? Enim 
+                        accusantium architecto, delectus natus magni perferendis?</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="start_tour">
+            
+            <h1>Let's Get Started?</h1>
+            <div class="start_tour_services">
+                <div class="start_tour_service">
+                    <i class="fa-solid fa-globe"></i>
+                    <p>Select your travel experience</p>
+                </div>
+                <div class="start_tour_service">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Choose a departure date</p>
+                </div>
+                <div class="start_tour_service">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p>Call us to book tour trip</p>
+                </div>
+            </div>
+            <a href="#" class="start_button .start_button_decor">GET STARTED</a>
+       
+        <!-- Get Started Form -->
+        <section class="get_started_form" id="get_start_form">
+            <form action="form_popup" id="form_popup">
+
+                <div class="form_section_1">
+                    <div class="section_lable_1">
+                        <label for="select_experience" id="select_experience" >
+                            SELECT YOUR TRAVEL EXPERIENCE
+                        </label>
+                        <input type="text" name="experience" id="select_experience_type" class="popup"
+                                                placeholder="Discovering the Bali and Deep South" required>
+                    </div>
+                    <div class="section_lable_2">
+                        <label for="select_date" id="select_date">Select date</label>
+                        <input type="text" name="date" id="date" class="popup" placeholder="dd / mm / yy" required>
+                    </div>
+                    <div class="section_lable_3">
+                        <label for="number_adults" id="number_adults">Number of adults</label>
+                        <input type="number" name="adults" id="adults" class="popup" required>
+                    </div>
+                    <div class="section_lable_4">
+                        <label for="number_children" id="number_children">Number of Children</label>
+                        <input type="number" name="Children" id="Children" class="popup" required>
+                    </div>
+                </div>
+
+                <div class="form_section_2">
+                    <div class="lable_1">
+                        <label for="first_name" id="first_name">First name</label>
+                        <input type="text" name="fname" id="fname" class="popup" required>
+                    </div>
+                    <div class="lable_2">
+                        <label for="last_name" id="last_name">Last name</label>
+                        <input type="text" name="lname" id="lname" class="popup" required>
+                    </div>
+                    <div class="lable_3">
+                        <label for="mail" id="mail">Email</label>
+                        <input type="text" name="email" id="email" class="popup" required>
+                    </div>
+                    <div class="lable_4">
+                        <label for="phone_number" id="phone_number">Phone</label>
+                        <input type="text" name="phone" id="phone" class="popup" required>
+                    </div>
+                    <div class="lable_5">
+                        <label for="msg" id="msg">Message</label>
+                        <input type="text" name="message" id="message" class="popup" required>
+                    </div>
+                    <div class="lable_6">
+                        <label for="from" id="from">I'm from</label>
+                        <input type="text" name="country" id="country" class="popup" placeholder="India" required>
+                    </div>
+                    <div class="lable_7">
+                        <input type="checkbox" name="checkbox_pop" id="checkbox_pop" class="popup_checkbox" required>
+                        <label for="policy" id="policy">I've read and agree the policy</label>
+                    </div>
+                    <button class="sent_request">SENT TRAVEL REQUEST</button>
+                </div>
+            <span href="#" class="close">x</span>
+            </form>
+        </section>
+
+    </section>
+
+        <section class="inspiration">
+            <h1 class="inspiration_heading">Get Inspired</h1>
+            <p class="inspiration_describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident necessitatibus aliquid enim? Magni saepe cupiditate aut animi voluptates. Debitis saepe sunt similique.</p>
+            
+            <div class="inspiration_part">
+                <div class="inspiration_figure_1 figure_hover">
+                    <img src="../images/skydiving.jpg" alt="skydiving" class="inspiration_image">
+                    <div class="inspiration_title">
+                        <h1>Lorem,ipsum dolor.</h1>
+                        <div class="inspiration_description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate rerum quasi neque cumque.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="inspiration_figure_2 figure_hover">
+                    <img src="../images/riding_horse.jpg" alt="riding_horse" class="inspiration_image">
+                    <div class="inspiration_title">
+                        <h1>Lorem,ipsum dolor.</h1>
+                        <div class="inspiration_description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate rerum quasi neque cumque.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="inspiration_figure_3 figure_hover">
+                    <img src="../images/boating.jpg" alt="boating" class="inspiration_image">
+                    <div class="inspiration_title">
+                        <h1>Lorem,ipsum dolor.</h1>
+                        <div class="inspiration_description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate rerum quasi neque cumque.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="inspiration_figure_4 figure_hover">
+                    <img src="../images/hill-climbing.jpg" alt="hill-climbing" class="inspiration_image">
+                    <div class="inspiration_title">
+                        <h1 >Lorem,ipsum dolor.</h1>
+                        <div class="inspiration_description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate rerum quasi neque cumque.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="inspiration_figure_5 figure_hover">
+                    <img src="../images/forest-exploration.jpg" alt="forest-exploration" class="inspiration_image">
+                    <div class="inspiration_title">
+                        <h1>Lorem,ipsum dolor.</h1>
+                        <div class="inspiration_description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate rerum quasi neque cumque.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="inspiration_figure_6 figure_hover">
+                    <img src="../images/beach-party.jpg" alt="beach-party" class="inspiration_image">
+                    <div class="inspiration_title">
+                        <h1>Lorem,ipsum dolor.</h1>
+                        <div class="inspiration_description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate rerum quasi neque cumque.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Experts">
+            <div class="guides">
+                <h1>Our Guides & Local Experts</h1>
+                <div class="local_experts">
+                    <img src="../images/localExpert1.jpg" alt="localExpert1" class="image_of_experts expert1">
+                    <img src="../images/localExpert3.jpg" alt="localExpert2" class="image_of_experts expert2">
+                    <img src="../images/localExpert4.jpg" alt="localExpert3" class="image_of_experts expert3">
+                    <img src="../images/localExpert2.jpg" alt="localExpert4" class="image_of_experts expert4">
+                    <img src="../images/localExpert6.jpg" alt="localExpert5" class="image_of_experts expert5">
+                    <img src="../images/localExpert5.jpg" alt="localExpert6" class="image_of_experts expert6">
+                </div>
+                <a href="#" class="guides_meet">MEET OUT GUIDES</a>
+            </div>
+            <div class="expert_experience">
+                <div class="experience">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <h4>Fantastic experience!</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta aliquid accusantium incidunt sit! Quasi 
+                        veritatis dolorum aut quae neque! Consequuntur molestias dolore quaerat tempore dignissimos id enim fugiat earum similique!</p>
+                    <h4>PAUL WALKER</h4>
+                    <i class="fa-solid fa-spa"></i> &nbsp;
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>&nbsp;&nbsp;&nbsp;
+                    <span>Reviewed 1 week ago</span>
+                    </div>
+                    <div class="ratings">
+                        <div class="trip_advisor">
+                            <img src="../images/tripadvisor.png" alt="tripadvisor" class="tripadvisor_logo">
+                        </div>   
+                        <div class="reviews">
+                            <h4>ECOTOUR BALI</h4>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>&nbsp;&nbsp;&nbsp;
+                            <span>50 reviews</span>
+                        </div>
+                
+            </div>
+        </section>
+
+    <section class="booking_ticket">
+        <div class="bt_div">
+            <i class="fa-regular fa-calendar-days"></i>
+            <div class="booking_head">
+                <h2>Book Now</h2>
+                <h2>Lorem ipsum dolor sit</h2>
+            </div>
+        </div>
+        <a href="#" class="check_date">CHECK THE DATES</a>
+    </section>
+    </main>
+
+<footer class="main_footer">
+    <div class="footer_items footer_items_1">
+        <img src="../images/logo1.png" alt="logo" class="footer_logo" />
+        <p class="footer_item">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab enim
+          iusto fugit officia delectus ea maxime deserunt ipsam numquam.
+        </p>
+        <p class="footer_item">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+          tempora beatae ex amet quisquam.
+        </p>
+    </div>
+    <div class="footer_items">
+        <p class="footer_heading">ABOUT US</p>
+        <a href="#" class="footer_item">ABOUT ECOTOUR</a>
+        <a href="#" class="footer_item">GONDWANA</a>
+        <a href="#" class="footer_item">OUR TEAM</a>
+        <a href="#" class="footer_item">GUESTBOOK</a>
+        <a href="#" class="footer_item">IMPRINT</a>
+    </div>
+    <div class="footer_items">
+        <p class="footer_heading">CUSTOMER SERVICE</p>
+        <a href="#" class="footer_item">BOOKING CONDITION</a>
+        <a href="#" class="footer_item">CONTACT-US</a>
+        <a href="#" class="footer_item">FAQ'S</a>
+        <a href="#" class="footer_item">LEGAL NOTICE</a>
+        <a href="#" class="footer_item">PRIVACY POLICY</a>
+    </div>
+    <div class="footer_items footer_items_2">
+        <p class="footer_heading">RESERVATIONS &
+                                  BOOKING</p>
+        <P class="footer_item">MONDAY TO FRIDAY
+            from 8:00 am to 8:00 pm</P>
+        <P class="footer_item">SATURDAY TO SUNDAY
+            from 9:00 am to 5:00 pm</P>
+        <P class="footer_item">Atlantic Standard Time
+            +1 (809) 856 2260</P>
+    </div>
+    <div class="footer_items">
+        <p class="footer_heading">FOLLOW US</p>
+        <a href="https://www.facebook.com/login/" class="footer_item"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/accounts/login/" class="footer_item"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/login" class="footer_item"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+</footer>
+
+    <script src="privatetour.js"></script>
+    <script src="../shared.js"></script>
+</body>
+</html>

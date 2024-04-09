@@ -1,0 +1,48 @@
+let menuButton = document.querySelector('.menu_button');
+let closeNav = document.querySelector('.nav_box');
+let closeButton = document.querySelector('.close_button');
+let getStartButton = document.querySelector('.start_button');
+let getStart = document.querySelector('.get_started_form');
+let sendRequest = document.querySelector('.sent_request');
+let mainHeader = document.querySelector('.main_header');
+let highlightTab = document.querySelector('.highlightTab');
+let highlight = document.querySelector('.nav_tab_highlight');
+let descriptionTab =document.querySelector('.descriptionTab');
+let description = document.querySelector('.nav_tab_description')
+let galleryTab =document.querySelector('.galleryTab');
+let gallery = document.querySelector('.nav_tab_gallery')
+let images = document.querySelector('.slide_image')
+
+menuButton.addEventListener('click', function(){
+    closeNav.style.display = 'block';
+});
+
+closeButton.addEventListener('click',function(){
+    closeNav.style.display = "none";
+    getStart.style.display='none';
+});
+
+getStartButton.addEventListener('click', function(){
+    getStart.style.display='block';
+});
+
+sendRequest.addEventListener('click',function(){
+   getStart.style.display='none';
+   mainHeader.style.display='block';
+});
+
+description.addEventListener('click',function(){
+    highlightTab.style.display='none';
+    galleryTab.style.display='none';
+    descriptionTab.style.display='block'
+})
+
+highlight.addEventListener('click',function(){
+    highlightTab.style.display='block';
+    galleryTab.style.display='none';
+    descriptionTab.style.display='none'
+})
+
+// for(let i = 1; i<=images.length;i++){
+
+// }

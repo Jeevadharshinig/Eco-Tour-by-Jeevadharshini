@@ -1,0 +1,263 @@
+
+.get_started_form{
+        position: fixed;
+        display: none;
+        top: 0;
+        left:0;
+        z-index: 100;
+        width: 100vw;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        
+}
+
+input:hover{
+box-shadow: 4px 4px 4px rgba(0,0,0,0.6);
+transition: box-shadow 0.2s;
+
+}
+
+#form_popup{
+    width: 80%;
+    position: relative;
+    top:100px;
+    left: 150px;
+}
+
+
+
+.form_section_1{
+    background-color: #9fcd32;
+    padding: 18px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    gap:20px;
+    width: 100%;
+    }
+
+    .form_section_1 label{
+        color: white;
+    }
+.popup{
+    margin-top: 1rem;
+    display: block;
+    width:auto;
+    border: none;
+    padding: 1rem;
+}
+
+.popup_checkbox{
+    display: inline-block;
+}
+
+.form_section_2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    "fname lname email phone"
+    "msg msg msg from"
+    "msg msg msg box"
+    "msg msg msg sent";
+    gap:30px;
+    background: lightgray;
+    width: 100%;
+    padding: 16px;
+}
+
+.lable_1{
+    grid-area: fname;
+}
+
+.lable_2{
+    grid-area: lname;
+}
+
+.lable_3{
+    grid-area: email;
+}
+
+.lable_4{
+    grid-area: phone;
+}
+
+.lable_5{
+    grid-area: msg;
+}
+
+.lable_6{
+    grid-area: from;
+}
+
+.lable_7{
+    grid-area: box;
+}
+
+.sent_request{
+    grid-area: sent;
+}
+
+
+#message{
+padding: 90px;
+width: 100%;
+}
+
+.sent_request{
+   font-weight: bold;
+   color: white;
+   padding: 18px;
+   background-color: #9fcd32;
+   text-align: center;
+   border:none;
+}
+
+.close{
+    top:0;
+    right:0;
+    width: 35px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    cursor:pointer;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #f00505;
+    color:white;
+    padding: 4px;
+    border-radius: 2px;
+  }
+
+
+@media (max-width:1200px) {
+
+    .get_started_form{
+        height: 100%;
+    }
+    .form_section_2{
+     width: 100%;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: 
+        "fname fname lname lname"
+        "email email phone phone"
+        "msg msg from from"
+        "msg msg box box"
+        "sent sent sent sent";
+        gap:20px;
+        padding: 14px;
+    }
+    #form_popup{
+        top:4%;
+        left:100px;
+        height: 15rem;
+    }
+    .popup{
+        margin-top: 12px;
+        width: 100%;
+        border: none;
+        padding: 10px;
+    }
+    label{
+        font-size: 14px;
+    }
+    .form_section_1{
+        padding: 10px;
+        gap:5px;
+    }
+    .popup{
+        padding: 10px;
+    }
+
+    #message{
+        padding:30px;
+    }
+
+    .form_section_2{
+        gap:10px;
+    }
+    .close{
+        font-size: 14px;
+    }
+}
+@media(max-width:900px) {
+    .section_lable_1{
+        width: 100%;
+    }  
+    label{
+        font-size: 10px;
+     }
+    #form_popup{
+        top:10px;
+        left:80px;
+    }
+    
+}
+@media(max-width:600px) {
+    #form_popup{
+        left:50px;
+     }
+    
+    #message{
+        padding: 20px;
+    }
+           
+    .popup{
+        margin-top:0;
+        padding: 8px;
+    }
+    
+    .form_section_1{
+        padding: 10px;
+        gap:5px;
+    }
+
+    .form_section_2{
+        padding: 5px;
+    }
+    .section_lable_2{
+        width: 100%;
+    }
+    .sent_request{
+        font-size:10px;
+    }
+    
+    
+}
+@media (max-width:350px) {
+    .form_section_2{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+           grid-template-areas: 
+           "fname"
+           "lname"
+           "email"
+           "phone"
+           "msg"
+           "from"
+           "box"
+           "sent";
+           gap:0px; 
+        }
+     #form_popup{
+        left:30px;
+     }
+        .popup{
+            padding: 5px;
+        }
+
+       
+       .section_lable_3{
+        width: 100%;
+    }
+    .section_lable_4{
+        width: 100%;
+    }
+
+    #message{
+        padding: 8px;
+        
+    }
+
+   
+    
+}

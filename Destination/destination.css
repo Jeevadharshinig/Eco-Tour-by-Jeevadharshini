@@ -1,0 +1,532 @@
+.destination_nav{
+    background:#024602;
+}
+
+.main_container{
+    width: 100%;
+    height: 32rem;
+    position: relative;    
+}
+
+.container_image{
+    width: 100%;
+    height: 32rem;
+    position: relative;
+    object-fit: cover;
+}
+
+.container_description{
+    top:240px;
+    left:200px;
+    color:white;
+    position:absolute;
+}
+
+.container_heading{
+    font-size: 34px;
+}
+
+.container_para{
+    font-weight: bold;
+    font-size:60px;
+}
+
+.description_paradise{
+    width: 100%;
+    text-align: center;
+    padding: 80px;
+}
+
+.description_paradise h1{
+    font-size: 36px;
+}
+
+
+.pictures{
+    max-height: 50vh;
+    display: flex;
+}
+
+.picture{
+    width: 33.333%;
+    object-fit: cover;
+    
+}
+
+.geography{
+    width: 100%;
+    background: #dddcdc;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px;
+    gap:50px;
+    background: #e6e5e5;
+}
+
+.geography_details{
+    flex-basis: 50%;
+   padding: 0 2%;
+}
+
+.geography_details h1{
+    font-size:40px;
+} 
+
+.geography_map{
+    flex-basis: 20%;
+}  
+
+ .map_image{
+    
+    margin-bottom: 4rem; 
+    object-fit: cover;
+
+}
+
+.about_map{
+    position: relative;
+} 
+
+.map_paragraph{
+    background:white;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+} 
+
+.map_icon{
+    font-size: 60px;
+    color:#1f851f;
+    position: absolute;
+    top:-21px;
+    left:-21px;
+    z-index: 1;
+}  
+
+.sailing_boat{
+    width: 100%;
+    height: 30rem;
+    position: relative;
+}
+
+.boat_picture{
+    width: 100%;
+    height: 30rem;
+    position: absolute;
+    object-fit: cover;
+    filter: brightness(50%);
+   
+}
+
+.sailing{
+    position: absolute;
+    top:140px;
+    left:80px;
+    right: 80px;
+     font-size: 36px;
+     text-align: center;
+     color: white;
+     
+}
+
+.history{
+    width: 100%;
+    padding: 5%;
+    background-color: #f7f6f6;
+}
+
+.history_heading{
+    text-align: center;
+    font-size: 36px;
+}
+
+.history_paragraph{
+    columns: 2;
+    gap: 10px;
+    text-align: justify;
+
+}
+
+.history_paragraph p{
+    font-size: 16px;
+}
+
+.picture_animation{
+    width: 100%;
+    height: 38rem;
+    position: relative;
+}
+
+.animation_image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.anime_video{
+    position: absolute;
+    right:140px;
+    width: 50%;
+    transform: translateY(-50%);
+    top:50%;
+
+}
+
+.description{
+
+    top: 50%;
+    left: 150px;
+    padding:30px;
+    width: 40%;
+    background-color: white;
+    position: relative;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+
+.description_heading{
+    font-size: 30px;
+}
+
+.description_para_1{
+    font-weight: bold;
+}
+
+.show{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    background: yellowgreen;
+    padding: 14px;
+    border-radius: 1px;
+    position:absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.show:hover,
+.show:active{
+    background-color: #157e15;
+    transition: 0.8s;
+}
+
+
+
+@media (max-width:1200px){
+
+    
+    .description_paradise h1{
+        font-size: 34px;
+    }
+
+    .description_paradise p{
+        font-size: 14px;
+    }
+
+    
+    .geography_details h1{
+        font-size: 38px;
+    }
+
+    .geography_details p{
+        font-size: 14px;
+    }
+
+    .map_paragraph{
+        font-size: 14px;
+    }
+
+    .map_icon{
+        font-size: 50px;
+    }
+
+    .map_image{
+        margin-bottom: 2rem;
+    }
+    .sailing{
+        top:120px;
+        right: 20px;
+        left: 20px;
+        font-size: 30px;
+    }
+
+    .history{
+        font-size: 14px;
+    }
+    
+    .history_paragraph p{
+        font-size: 14px;
+    }
+
+
+    .anime_video{
+        width: 52%;
+        right: 80px;
+    }
+
+    .description{
+        padding: 20px;
+        width: 40%;
+        left: 80px;
+    }
+   
+    .description_heading{
+        font-size: 20px;
+    }
+
+    .description p{
+        font-size: 12px;
+    }
+
+    .show{
+        font-size: 12px;
+        padding: 10px;
+    }
+
+
+}
+
+
+
+@media (max-width:900px) {
+    .main_containter{
+        height: 28rem;
+    }
+    .container_image{
+        height: 28rem;
+    }
+ 
+    .container_description{
+        top:160px;
+        left:100px
+    }    
+    .description_paradise{
+        padding: 40px;
+    }
+
+    .description_paradise h1{
+        font-size: 32px;
+    }
+
+    .description_paradise p{
+        font-size: 12px;
+    }
+
+    .geography{
+        justify-content: space-around;
+    }
+    .geography_details h1{
+        font-size: 32px;
+    }
+
+    .geography_details p{
+        font-size: 12px;
+    }
+
+    .map_paragraph{
+        font-size: 12px;
+        padding: 20px;
+    }
+    .map_image{
+        width: 100%;
+        height: 100%;
+    }
+
+    .sailing{
+        top:90px;
+        font-size: 30px;
+    }
+
+    .history_heading{
+    font-size: 32px;
+    }
+
+    .history_paragraph p{
+        font-size: 12px;
+    }
+   
+    .picture_animation{
+        height: 52rem;
+        width: 90%;
+        left:35px;
+    }
+
+    .animation_image{
+        height: 25rem;
+        width: 100%;
+    }
+    .anime_video{
+        width: 100%;
+       position: relative;
+       left: 0;
+       bottom:-25%;
+       top:initial;
+       transform: translate(0,0);
+    }
+
+    .description{
+        top:200px;
+        left:70px;
+        right: 50px;
+        width: 80%;
+        padding: 10px;
+    }
+
+    .description_heading{
+        font-size: 22px;
+    }
+
+    .show{
+        font-size: 12px;
+    }
+
+    
+}
+
+@media (max-width:600px) {
+
+    .container_description{
+        top:180px;
+        left:50px;
+        right: 50px;
+        text-align: center;
+    }
+
+    .description_paradise{
+        padding: 5%;
+    }
+
+    .geography{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+
+    .map_image{
+        margin-top: 30px;
+        max-width: 100%;
+    }
+
+    .geography_map{
+        max-width: 100vw;
+    }
+   .sailing{
+    top:80px;
+    font-size: 24px;
+   }
+   
+    .history{
+        margin-bottom: 30px;
+        padding: 5%;
+
+    }
+
+    
+    .history_paragraph{
+        columns: 1;
+    }
+    
+    .picture_animation{
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 32rem;
+       }
+        .animation_image{
+    
+            display: none;
+        }
+    
+        .anime_video{
+            left: 0;
+           bottom: 20px;
+        }
+
+        .description{
+            top:20%;
+            padding: 20px;
+            left:0;
+            width: 100%;
+            background-color: beige;
+         }
+    
+         .description .description_heading{
+            font-size: 22px;
+         }
+    
+         .description .description_para_1{
+            font-size: 12px;
+         }
+    
+         .description .description_para_2{
+            font-size: 12px;
+         }
+    
+         .show{
+            font-size: 12px;
+            padding: 8px;
+         }
+}
+
+@media(max-width:350px)
+{
+
+
+    .container_description{
+        top:100px;
+        left:20px;
+        right: 20px;
+    }
+
+    .sailing{
+        top:70px;
+        left: 10px;
+        right: 10px;
+        font-size: 20px;
+    }
+
+    .picture_animation{
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 30rem;
+       }
+
+        .animation_image{
+    
+            display: none;
+        }
+    
+        .anime_video{
+            left: 0;
+           bottom: 20px;
+        }
+
+    .description{
+        top:20%;
+        padding: 20px;
+        left:0;
+        width: 100%;
+        background-color: beige;
+     }
+
+     .description .description_heading{
+        font-size: 22px;
+     }
+
+     .description .description_para_1{
+        font-size: 12px;
+     }
+
+     .description .description_para_2{
+        font-size: 12px;
+     }
+
+     .know{
+        font-size: 12px;
+        padding: 8px;
+     }
+}
+

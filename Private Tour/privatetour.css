@@ -1,0 +1,714 @@
+.privatetour_nav{
+    background:#024602;
+}
+
+.private_tour{
+    width: 100%;
+    height: 32rem;
+    position: relative;
+}
+
+.private_tour_image{
+    width: 100%;
+    height: 32rem;
+    position:absolute;
+    filter: brightness(50%);
+    object-fit: cover;
+
+}
+
+.private_tour_content{
+    top:130px;
+    left: 200px;
+    color:white;
+    position: absolute;
+}
+
+.private_tour_para1{
+    font-size: 34px;
+}
+
+.private_tour_para2{
+    font-size: 60px;
+}
+
+.private_trips{
+    padding: 6% 10%;
+}
+
+.private_day_trip{
+    text-align: center;
+}
+
+.private_day_title{
+    color:#269926;
+    font-size: 36px;
+}
+
+.private_trip_varietis{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    gap: 26px;
+    margin-top: 5%;
+}
+
+.private_trip_variety_1{
+    width: 80rem;
+    height: 15rem;
+    padding: 30px;
+    background-color: yellowgreen;
+}
+
+.private_trip_variety_2{
+    width: 80rem;
+    height: 15rem;
+    padding: 30px;
+    background-color: #1f861f;
+}
+
+.trip_variety_title{
+    font-size: 30px;
+}
+
+.start_tour{
+    width: 100%;
+    height: 32rem;
+    position: relative;
+    background: url('../images/natural_scenary.jpg') center/cover no-repeat;
+    padding: 50px 280px;
+
+}
+
+.start_tour h1{
+    position: relative;
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 36px;
+    
+}
+.start_tour_services{
+    position:relative;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(40px);
+    box-shadow: 0 12px 12px rgba(0,0,0,0.4);
+    padding: 4%;
+    display: flex;
+    text-align: center;
+    justify-content:space-between;
+}
+
+.start_tour_service{
+    color:white;
+
+}
+
+.start_tour_service i{
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.start_button{
+    left: 41%;
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    background:yellowgreen;
+    padding: 16px;
+    border-radius: 2px;
+    border: none;
+    transform: translate(50%,-50%);
+}
+
+.start_button:hover,
+.start_button:active{
+    background-color: #157e15;
+}
+
+.inspiration{
+    padding:100px 0px;
+}
+
+.inspiration_heading{
+    text-align: center;
+    font-size: 36px;
+}
+
+.inspiration_describe{
+    text-align: center;
+}
+
+.inspiration_part{
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    grid-template-areas: 
+    "act_1 act_1 act_1 act_1 act_1 act_1 act_1 act_2 act_2 act_2 act_2 act_3 act_3 act_3 act_3 act_3"
+    "act_4 act_4 act_4 act_4 act_5 act_5 act_5 act_5 act_6 act_6 act_6 act_6 act_6 act_6 act_6 act_6";
+    grid-template-rows: repeat(2,20rem);
+    gap:3px;
+    padding: 20px;
+    color: white;
+}
+
+.inspiration_figure_1{
+    position: relative;
+    grid-area: act_1;
+}
+
+.inspiration_figure_2{
+    position: relative;
+    grid-area: act_2;
+}
+
+.inspiration_figure_3{
+    position: relative;
+    grid-area: act_3;
+}
+
+.inspiration_figure_4{
+    position: relative;
+    grid-area: act_4;
+}
+.inspiration_figure_5{
+    position: relative;
+    grid-area: act_5;
+}
+.inspiration_figure_6{
+    position: relative;
+    grid-area: act_6;
+}
+
+.inspiration_image{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    object-fit: cover;
+}
+
+.inspiration_title{
+    position: relative;
+    width: 100%;
+    left: 20px;
+    top:200px;
+    overflow: hidden;
+}
+
+.inspiration_title h1{
+    font-size:20px;
+    
+}
+
+.inspiration_description{
+    position: absolute;
+
+}
+
+.inspiration_title:hover .inspiration_image{
+    top:0;
+    overflow: visible;
+    height: 100%;
+    transition: 0.8s;
+    filter: brightness(50%);
+}
+
+.inspiration_image:hover{
+    width: 100%;
+    height: 100%;
+    transition: 0.8s;
+    filter:brightness(50%);
+}
+
+.figure_hover:hover .inspiration_title{
+    top:0;
+overflow: visible;
+transition: 0.8s;
+
+}
+
+
+.Experts
+{
+    background-color: #e4e3e3;
+    display: flex;
+    padding: 80px;
+    justify-content: space-between;
+    gap:50px;
+}
+
+.Experts h1{
+    font-size: 30px;
+}
+
+.local_experts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,10rem);
+    gap:16px;
+    margin-bottom: 40px;
+}
+
+.image_of_experts{
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    object-fit: cover;
+
+}
+
+.guides_meet{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background: yellowgreen;
+    padding: 18px;
+}
+
+.guides_meet:hover{
+    background: #157e15;
+}
+
+.expert_experience{
+   flex-basis: 60%;
+}
+
+.experience{
+    background: white;
+    padding: 5%;
+}
+
+.fa-star, .fa-star-half{
+    color: #269926;
+}
+
+.ratings{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+
+.tripadvisor_logo{
+    width: 200px;
+    object-fit: cover;
+
+}
+
+
+@media (max-width:1200px){
+    .private_tour_content{
+        top:120px;
+    }
+
+    .private_day_title{
+        font-size: 30px;
+    }
+
+    .private_trips p{
+       font-size: 14px;
+    }
+    .trip_variety_title{
+        font-size: 26px;
+    }
+    .private_trip_variety_1{
+        height: 15rem;
+    }
+    .private_trip_variety_2{
+        height: 15rem;
+    }
+
+    .start_tour{
+        padding: 50px;
+    }
+
+    .start_button{
+       
+        left:37%;
+    }
+
+    .inspiration{
+        padding: 30px 0;
+    }
+
+    .inspiration_heading{
+        font-size: 34px;
+    }
+
+    .inspiration_describe{
+        font-size: 14px;
+    }
+
+    
+    .inspiration_part{
+    grid-template-rows: repeat(2,15rem);
+    padding: 5px;
+    }
+
+    .inspiration_title{
+        top:140px;
+        left:10px;
+    }
+    
+    .inspiration_title h1{
+        font-size: 16px;
+    }
+    
+    .inspiration_title p{
+        font-size: 10px;
+    }
+
+    .Experts{
+        padding: 30px;
+    }
+    .local_experts{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,7rem);
+        justify-items: center;
+        gap:5px;
+        }
+
+        .image_of_experts{
+            width: 110px;
+            height: 110px;
+        }
+
+    .guides h1{
+        font-size: 22px;
+    }
+
+    .guides_meet{
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .experience{
+        padding: 30px;
+    }
+
+    .experience p{
+        font-size: 14px;
+    }
+
+    .experience h4{
+        font-size: 16px;
+    }
+
+    .experience span{
+        font-size: 12px;
+    }
+
+    .experience i{
+        font-size: 14px;
+    }
+
+    .reviews span{
+        font-size: 12px;
+    }
+
+    .reviews {
+        font-size: 14px;
+    }
+
+}
+
+
+
+@media (max-width:900px){
+    
+
+    .private_tour_content{
+
+        left:100px;
+    }
+
+    .private_trips{
+        padding: 40px;
+    }
+
+    .private_trip_variety_1{
+        padding: 15px;
+    }
+
+    .private_trip_variety_2{
+        padding: 15px;
+    }
+    .start_button{
+        font-size: 12px;
+        padding: 12px;
+        left: 36.5%;
+    }
+
+    .start_tour_service i{
+        font-size: 24px;
+    }
+
+    .start_tour_service p{
+        font-size: 12px;
+    }
+
+
+.inspiration_part{
+    padding: 30px;
+    grid-template-columns: repeat(2,1fr) ;
+    grid-template-rows: repeat(3,18rem);
+    grid-template-areas: 
+ "act_1 act_2"
+ "act_3 act_4"
+ "act_5 act_6";
+}
+
+.inspiration_figure_1{
+    grid-area: act_1;
+}
+
+.inspiration_figure_2{
+    grid-area: act_2;
+}
+.inspiration_figure_3{
+    grid-area: act_3;
+}
+
+.inspiration_figure_4{
+    grid-area: act_4;
+}
+
+.inspiration_figure_5{
+    grid-area: act_5;
+}
+.inspiration_figure_6{
+    grid-area: act_6;
+}
+
+.inspiration_title{
+    top:168px;
+}
+
+.Experts
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+}
+.local_experts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,10rem);
+    gap:30px;
+}
+
+
+
+}
+
+@media(max-width:600px){
+    .private_tour{
+        height: 28rem;
+    }
+
+    .private_tour_image{
+        height: 28rem;
+    }
+    .private_tour_content{
+        text-align: center;
+        left: 20px;
+        right: 20px;
+        top:50px;
+    }
+
+    .private_day_title{
+        font-size: 28px;
+    }
+
+    .private_trip_varietis{
+        flex-direction: column;
+    }
+
+    .private_trip_variety_1{
+        width: 20rem;
+        height: 12rem;
+    }
+
+    .private_trip_variety_2{
+        width: 20rem;
+        height: 12rem;
+
+    }
+
+    .trip_variety_title{
+        font-size: 22px;
+    }
+    
+    .start_tour{
+        padding: 0px;
+    }
+
+    .start_tour_services{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .start_button{
+        left:32%;
+    }
+
+    .start_tour h1{
+        top:20px;
+        font-size: 30px;
+    }
+
+    .inspiration_title{
+        top:50px;
+    }
+
+    .inspiration_description p{
+        font-size: 10px;
+    }
+
+ 
+.inspiration_part{
+    grid-template-rows: repeat(3,10rem)};
+
+
+.Experts
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10% 5%;
+        text-align: center;
+        align-items: center;
+    }
+    .local_experts{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,5rem);
+    }
+    .image_of_experts{
+        width: 80px;
+        height: 80px;
+    }
+    .guides_meet{
+        top: 40px;
+    }
+
+
+}
+
+@media(max-width:350px){
+    .private_day_title{
+        font-size: 22px;
+    }
+    .private_day_trip p{
+        font-size: 12px;
+    }
+    .private_trip_variety_1{
+        height: 10rem;
+        width: 14rem;
+    }
+    .private_trip_variety_2{
+        height: 10rem;
+        width: 14rem;
+    }
+
+    .trip_variety_title{
+        font-size: 16px;
+    }
+
+    .private_trip_varietis p{
+        font-size: 10px;
+    }
+
+    .start_tour{
+        height:34rem;
+    }
+
+    .start_tour h1{
+        font-size: 28px;
+    }
+
+
+    .start_button{
+        left: 50%;
+        transform: translate(-50%,120%);
+    }
+
+
+
+    .inspiration_heading{
+        font-size: 28px;
+    }
+
+    
+
+.inspiration_part{
+    padding: 30px;
+    grid-template-columns: repeat(1,1fr) ;
+    grid-template-rows: repeat(6,16rem);
+    grid-template-areas: 
+    "act_1" 
+    "act_2"
+    "act_3" 
+    "act_4"
+    "act_5" 
+    "act_6";
+   }
+   
+   .inspiration_figure_1{
+       grid-area: act_1;
+   }
+   
+   .inspiration_figure_2{
+       grid-area: act_2;
+   }
+   .inspiration_figure_3{
+       grid-area: act_3;
+   }
+   
+   .inspiration_figure_4{
+       grid-area: act_4;
+   }
+   
+   .inspiration_figure_5{
+       grid-area: act_5;
+   }
+   .inspiration_figure_6{
+       grid-area: act_6;
+   }
+
+   .inspiration_title{
+    top:200px;
+    font-size: 14px;
+   }
+   .inspiration_description p{
+    font-size: 12px;
+   }
+
+   .local_experts{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 7rem);
+   }
+
+.tripadvisor_logo{
+    width: 100px;
+}
+    .ratings{
+        gap:0;
+    }
+
+    .experience p{
+        font-size: 12px;
+    }
+}
+
+
+
+
+

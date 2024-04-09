@@ -1,0 +1,399 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 300;
+  margin:0;
+  font-size:16px;
+}
+
+
+img{
+  object-fit: cover;
+}
+
+.image_lazy{
+  filter: blur(15px) brightness(40%) !important;
+}
+
+.main_header{
+    width: 100%;
+    height: 20%;
+    top: 0;
+    padding: 10px 18px;
+}
+
+.main_header div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.main_header img{
+
+    width: 180px;
+    height: 100px;
+}
+
+.get_in_touch{
+    font-family: "Montserrat", sans-serif;
+    background: #fcf9e4;
+    width: 210px;
+    padding: 20px;
+    cursor: pointer;
+    border: 2px solid #499c49;
+    text-align: center;
+
+}
+
+.get_in_touch:hover,
+.get_in_touch:active{
+    background: #c9c8c8;
+}
+
+.nav_box{
+ display: none;
+ position: fixed;
+ z-index: 10;
+ top: 0;
+ left: 0;
+ background: #82ce2c;
+ width: 30%;
+ height: 100%;
+}
+
+.close_button{
+  top:0;
+  right:0;
+  width: 35px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  cursor:pointer;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #f00505;
+  color:white;
+  padding: 4px;
+  border-radius: 2px;
+  border: none;
+}
+
+.mobile_nav {
+  display: block;
+  text-align: center;
+  height: 100%;
+  z-index: 100;
+}
+
+.mobile_lists {
+    margin-top:20%;
+    list-style: none;
+    padding: 0%;
+}
+
+.mobile_list_item{
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.mobile_list_item a{
+    font-family: "Cutive Mono", monospace;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color:white;
+}
+
+
+.mobile_list_item:hover,
+.mobile_list_item:active{
+    background: #3c883c;
+}
+
+.menu_button{
+    width: 3rem;
+    border: none;
+    cursor: pointer;
+    padding-top:0;
+    padding-bottom: 0;
+    vertical-align: middle;
+    background: transparent;
+}
+  
+.menu_button:focus{
+    outline: none;
+}
+
+.menu_bar{
+    border-radius: 3px;
+    width: 100%;
+    height: 0.2rem;
+    background: black;
+    display: block;
+    margin: 0.5rem 0;
+} 
+
+.booking_ticket{
+  padding: 4% ;
+  background-color: #9fcd32;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7%;
+}
+
+.bt_div{
+  display: flex;
+  gap:32px;
+}
+
+.bt_div i{
+  font-weight: 300;
+  font-size: 60px;
+}
+
+.booking_head{
+  font-size: 25px;
+}
+
+.booking_head:last-child {
+  color: #417703;
+}
+
+.check_date{
+  text-decoration: none;
+  font-weight: bold;
+  background: white;
+  color:black;
+  padding: 20px 30px ;
+}
+
+.check_date:hover{
+  background:#ddfcdd;
+}
+
+.main_footer{
+  width: 100%;
+  background-color: #209b20;
+  display: flex;
+  justify-content: space-evenly ;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 90px;
+}
+
+.footer_logo{
+  margin-left: 68px;
+  width: 170px;
+}
+
+.footer_items{
+  display: flex ;
+  flex-direction: column;
+  width: 300px;
+}
+
+.footer_item{
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 300;
+  align-items: center;
+  color: white;
+  padding: 14px; 
+}
+
+.footer_items_1{
+ flex-shrink: 1;
+}
+.footer_heading{
+  font-size: 18px;
+  color:#83df1b;
+  font-weight: bold;
+}
+
+.book_now_button{
+  text-decoration: none;
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+  color: white;
+  background:#9fcd32;
+  padding: 18px 30px;
+  border: none;
+  border-radius: 1px;
+}
+
+.book_now_button:hover,
+.book_now_button:active{
+  background-color: #157e15;
+}
+
+@media(max-width:1200px) {
+  .mobile_list_item{
+    padding: 14px;
+  }
+
+  .main_header img{
+    width: 140px;
+    height: 80px;
+  }
+  .get_in_touch{
+    font-size: 10px;
+    width: 120px;
+    padding: 12px;
+}
+
+.menu_button{
+  width: 2.5rem;
+}
+
+
+.main_footer{
+  padding: 20px;
+}
+
+.footer_items{
+  width: 200px;
+}
+
+.footer_item{
+  font-size: 12px;
+}
+
+.footer_logo{
+  margin-left: 18px;
+  width: 170px;
+  height: 80px;
+}
+
+.footer_heading{
+  font-size: 14px;
+}
+
+.bt_div i {
+  font-size: 40px;
+}
+
+.booking_head h2{
+  font-size: 30px;
+}
+.check_date{
+  padding: 14px;
+  font-size: 12px;
+}
+}
+
+@media(max-width:900px) {
+  
+.booking_head h2{
+  font-size: 26px;
+}
+  
+}
+
+@media (max-width:600px)
+{
+
+
+.menu_button{
+  width: 40px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.close_button{
+  width: 30px;
+  font-size: 20px;
+}
+
+.nav_box{
+  width: 70%;
+}
+
+.mobile_list_item{
+  font-size: 20px;
+  padding: 20px;
+}
+
+
+.main_footer{
+ padding: 20px;
+} 
+
+.footer_logo{
+  height: 70px;
+  margin-left: 40px;
+}
+.footer_items{
+  flex-basis: 15rem;
+}
+
+.footer_heading{
+  font-size: 16px;
+}
+
+.footer_item{
+  font-size: 14px;
+}
+
+.book_now_button{
+  font-size: 14px;
+  padding: 14px;
+}
+
+.bt_div{
+  gap:10px;
+}
+
+
+.booking_head{
+  font-size: 20px;
+}
+.booking_ticket{
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.booking_head h2{
+  font-size: 24px;
+}
+}
+
+@media (max-width:350px) {
+
+  .main_header{
+    padding: 0;
+  }
+
+  .main_header img{
+    width: 100px;
+    height: 60px;
+  }
+
+  .menu_button{
+    width: 2.3rem;
+  }
+
+  .footer_logo{
+    width: 180px;
+    height: 70px;
+    margin-left: 24px;
+  }
+  
+  .footer_item{
+    font-size: 12px;
+  }
+
+  .booking_head h2{
+    font-size: 20px;
+  }
+ 
+}
+
+
+

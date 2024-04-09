@@ -1,0 +1,950 @@
+
+.home_nav{
+    background:#024602;
+}
+
+.home_contents{
+    width: 100%;
+    height: 33rem;
+    position: relative;
+}
+
+.island_image{
+    width: 100%;
+    height: 33rem;
+    position: relative;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.home_content_div{
+    left:140px;
+    top:100px;
+    position: absolute;
+}
+
+.home_contents_head{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 30px;
+}
+
+.home_content_description{
+    color: white;
+    font-size: 56px ;
+}
+
+.home_badges{
+    width: 100%;
+    text-align: center;
+    display: flex;  
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.home_badges_list{
+   padding: 40px 0;
+}
+
+.home_badge_icon{
+
+    font-size: 60px;
+}
+
+.home_badges_image{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: #ddfcdd;
+    margin: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_badges_description{
+    text-align: center;
+    font-size: 16px;
+}
+
+.picture_animation{
+    width: 100%;
+    height: 38rem;
+    position: relative;
+}
+
+.animation_image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.anime_video{
+    position: absolute;
+    right:140px;
+    width: 50%;
+    transform: translateY(-50%);
+    top:50%;
+
+}
+
+.description{
+
+    top: 50%;
+    left: 150px;
+    padding:20px;
+    width: 40%;
+    background-color: white;
+    position: relative;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+
+.description_heading{
+    font-size: 30px;
+}
+
+.description_para_1{
+    font-weight: bold;
+}
+
+.know{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    background: yellowgreen;
+    padding: 14px;
+    border-radius: 1px;
+    position:absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.know:hover,
+.know:active{
+    background-color: #157e15;
+    transition: 0.8s;
+}
+
+
+
+.adventures{
+    width: 100%;
+} 
+
+.adventure_heading{
+   font-size: 30px;
+   text-align: center;
+}
+
+.adventure_activities{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,10rem);
+     grid-template-areas: 
+     "img1 img2 img3"
+     "img1 img2 img3"
+     "img4 img2 img5"
+     "img4 img6 img5"
+     "img7 img6 img8"
+     "img7 img6 img8";
+    gap:15px;
+    padding: 5%;
+}
+
+.activity_image{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+
+}
+
+.activity1{
+    position: relative;
+    grid-area: img1;  
+}
+
+
+.activity2{
+    position: relative;
+    grid-area: img2;
+}
+
+.activity3{
+    position: relative;
+    grid-area: img3;
+    
+}
+
+.activity4{
+    position: relative;
+    grid-area: img4;
+    
+}
+
+.activity6{
+    position: relative;
+    grid-area: img5;
+   
+}
+
+.activity5{
+    position: relative;
+    grid-area: img6;
+    
+}
+
+
+.activity7{
+    position: relative;
+    grid-area: img7;
+    
+}
+
+.activity8{
+    position: relative;
+    grid-area: img8;
+    
+}
+
+.container{
+    top:160px;
+    position: relative;
+    width: 100%;
+    left:30px;
+    transition: -8s ease;
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+
+.container:hover .activity_image{
+    top:0;
+    overflow: visible;
+    padding: 5px;
+    filter: brightness(50%);
+    width:100%;
+    height: 100%;
+transition: 0.8s;
+}
+
+.activity_image:hover {
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+transition: 0.8s ease;
+
+}
+
+.figure_hover:hover .container{
+top:0;
+overflow: visible;
+transition: 0.8s;
+}
+
+.activity_name{
+    font-size: 26px;
+    color: white;
+}
+
+.activity_cost{
+    background: #2dc42d;
+    width:55px;
+    text-align: center;
+    color: white;
+}
+
+.places{
+    position: absolute;
+}
+.activity_place{
+    color:white;
+}
+
+.activity_duration{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.content_page{
+    position: relative;
+    width: 100%;
+    height: 32rem;   
+}
+                            
+.content_image{
+    position: absolute;
+    width: 100%;
+    height: 32rem;
+    object-fit: cover;
+    
+}
+
+.content_page_title{
+    position: relative;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 36px;
+    top:40px;
+    
+}
+
+.content_page_details{
+    top:180px;
+    left:170px;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(40px);
+    box-shadow: 0 12px 12px rgba(0,0,0,0.4);
+    position:absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page_detail{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+.page_detail i{
+    font-size:50px;
+}
+
+.customers_page{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 9%;
+}
+
+.professional_img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 10px 0 lightgray;
+    margin-bottom: 2.5rem;
+    object-fit: cover;
+
+}
+
+.icon{
+    font-size: 60px;
+    padding: 34px;
+}
+
+.customers_page_icon{
+    display: flex;
+    padding: 10px;
+    left: 10px;
+}
+
+.customers_name{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.opinion_heading{
+    font-size: 30px;
+    margin-bottom:50px ;
+}
+
+.opinion_button{
+    text-decoration: none;
+    padding: 20px;
+    background:yellowgreen;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.opinion_button:hover,
+.opinion_button:active{
+    background-color: #157e15;
+}
+
+
+@media(max-width:1200px){
+
+
+     .book_now_button{
+        font-size: 14px;
+        padding: 14px;
+     }
+
+    .adventure_activities{
+        grid-template-rows: repeat(6,6.5rem);
+    }
+
+    .home_badges_image{
+        width: 110px;
+        height: 110px;
+    }
+
+    .home_badge_icon{
+        font-size: 36px;
+    }
+
+    .home_badges_description{
+        font-size: 12px;
+    }
+
+
+    .anime_video{
+        width: 52%;
+        right: 80px;
+    }
+
+    .description{
+        padding: 20px;
+        width: 40%;
+        left: 80px;
+    }
+   
+    .description_heading{
+        font-size: 20px;
+    }
+
+
+    .description p{
+        font-size: 12px;
+    }
+
+    .know{
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .adventure_heading{
+        font-size: 30px;
+    }
+   
+     .container{
+        top:100px;
+     }
+     .activity_cost{
+        padding: 3px;
+     }
+
+     .activity_duration{
+        font-size: 16px;
+    }
+     .activity_name{
+        font-size: 20px;
+     }
+     .container_modify{
+        top:220px;
+     }
+
+
+     .content_page_details{
+        left:105px;
+     } 
+    
+     .page_detail p{
+        font-size: 12px;
+     }
+
+     .page_detail i{
+        font-size: 30px;
+     }
+
+     .customers_page{
+        padding: 5%;
+     }
+
+     .professional_img{
+        width: 100px;
+        height: 100px;
+     }
+
+     .opinion_heading{
+        font-size: 40px;
+     }
+
+     .customers_name{
+        font-size: 16px;
+     }
+
+     .customers_about{
+        font-size: 12px;
+     }
+
+     .icon{
+        font-size: 40px;
+     }
+     
+
+     .opinion_heading{
+        font-size: 30px;
+     }
+
+     .opinion_button{
+        font-size: 12px;
+        padding: 14px;
+     }
+
+     .booking_heading h2{
+        font-size: 20px;
+     }
+}
+
+
+@media(max-width:900px)
+{
+    
+.home_contents{
+    width: 100%;
+    height: 30rem;
+}
+
+.island_image{
+    width: 100%;
+    height: 30rem;
+}
+
+.home_content_div{
+        top:80px;
+        left:100px;
+    }
+
+    .home_content_description{
+        font-size: 50px;
+    }
+
+
+    .home_badges_list{
+        padding: 18px 0;
+     }
+     
+     
+     .home_badges_image{
+         width: 90px;
+         height: 90px;
+     }
+
+    .home_badges_description{
+         font-size: 14px;
+    }
+
+    .picture_animation{
+        height: 48rem;
+        width: 90%;
+        left:35px;
+    }
+
+    .animation_image{
+        height: 25rem;
+        width: 100%;
+    }
+    .anime_video{
+        width: 100%;
+       position: relative;
+       left: 0;
+       bottom:-25%;
+       top:initial;
+       transform: translate(0,0);
+    }
+
+    .description{
+        top:200px;
+        left:70px;
+        right: 50px;
+        width: 80%;
+        padding: 10px;
+    }
+
+    .description_heading{
+        font-size: 22px;
+    }
+
+    .know{
+        font-size: 12px;
+    }
+    
+    .adventure_activities{ 
+        padding: 30px 70px;
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: repeat(4,11rem);
+        grid-template-areas:
+        "act_1 act_2"
+        "act_3 act_4"
+        "act_5 act_6"
+        "act_7 act_8";
+        object-fit: cover;
+    }
+
+    .activity1{
+        grid-area: act_1;
+    }
+
+    .activity2{
+        grid-area: act_2;
+    }
+
+    .activity3{
+        grid-area: act_3;
+    }
+
+    .activity4{
+        grid-area: act_4;
+    }
+
+    .activity5{
+        grid-area: act_5;
+    }
+
+    .activity6{
+        grid-area: act_6;
+    }
+
+    .activity7{
+        grid-area: act_7;
+    }
+
+    .activity8{
+        grid-area: act_8;
+    }
+    
+    .activity_name{
+        font-size: 26px;
+    }
+
+   
+.container{
+    top:40px;
+    left:10px;
+    line-height: 1;
+}
+     
+    .activity_cost{
+        font-size: 12px;
+    }
+
+    .content_page_details{
+        left:80px;
+    }
+
+    .page_detail{
+        padding: 10px;
+    }
+    
+    .page_detail p{
+        font-size: 10px;
+    }
+
+    .icon{
+        font-size: 50px;
+    }
+ 
+}
+
+
+
+@media(max-width:600px) {
+/* 
+    .home_contents{
+        width: 100%;
+        height: 24rem;
+    }
+    
+    .island_image{
+        width: 100%;
+        height: 24rem;
+    } */
+
+    .home_content_div{
+        top:50px;
+        left: 10px;
+        right: 10px;
+        text-align: center;
+    }
+    
+    .home_content_description{
+        font-size: 42px ;
+    } 
+
+    .book_now_button{
+        font-size: 16px;
+        padding: 12px;
+    }
+    
+   
+    .home_badges_image{
+        width: 50px;
+        height: 50px;
+    }
+    .home_badges{
+    padding: 30px 10px 50px 10px ;
+    gap:10px
+    }
+
+    .home_badges_description{
+        font-size: 10px;
+    }
+
+   .picture_animation{
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 32rem;
+   }
+    .animation_image{
+
+        display: none;
+    }
+
+    .anime_video{
+        left: 0;
+       bottom: 20px;
+    }
+ 
+     .description{
+        top:20%;
+        padding: 20px;
+        left:0;
+        width: 100%;
+        background-color: beige;
+     }
+
+     .description .description_heading{
+        font-size: 22px;
+     }
+
+     .description .description_para_1{
+        font-size: 12px;
+     }
+
+     .description .description_para_2{
+        font-size: 12px;
+     }
+
+     .know{
+        font-size: 12px;
+        padding: 8px;
+     }
+
+     .content_page{
+        height: 25rem;
+     }
+
+     .content_image{
+        height: 25rem;
+    }
+     .content_page_details{
+        top:100px;
+        width: 100%;
+        display: block;
+        left:0;
+        padding: 10px;
+}
+
+.content_page_title{
+    font-size: 22px;
+    top:35px;
+}
+
+
+
+.page_detail{
+    padding: 5px;
+}
+.page_detail{
+    font-size: 12px;
+}
+
+.page_detail i{
+    font-size: 16px;
+}
+
+
+.adventure_heading{
+    font-size: 24px;
+}
+.adventure_activities{
+    padding: 20px;
+    gap:5px;
+}
+
+.container{
+    top:40px;
+    left:10px;
+    line-height: 1;
+}
+
+.activity_name{
+    font-size: 20px;
+}
+
+.activity_cost{
+    padding: 5px;
+}
+
+
+.customers_page{
+    flex-direction: column;
+}
+
+.professional_img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0;
+    box-shadow: 0 5px 0 lightgray;
+
+    
+}
+.customers_page_icon{
+    font-size: 16px;
+}
+
+.opinion_heading{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.icon{
+    font-size: 26px;
+}
+
+.customers_name{
+    font-size: 14px;
+}
+.customers_about{
+    font-size: 10px;
+}
+
+.opinion_button{
+    padding: 10px;
+}
+
+}
+
+@media(max-width:350px){
+
+    .home_contents_head{
+        font-size: 20px;
+    }
+    
+    .home_content_description{
+        font-size: 38px ;
+    }
+
+    .book_now_button{
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    
+    .description{
+        padding: 10px;
+    }
+    .description .description_heading{
+        font-size: 20px;
+    }
+
+    .picture_animation{
+        width: 100%;
+        height: 26rem;
+       }
+       
+    .anime_video{
+        bottom:40px;
+    }
+
+    .activity_duration{
+        font-size:8px;
+    }
+
+    .activity_place{
+        font-size: 8px;
+    }
+    .activity_name {
+        font-size: 16px;
+    }
+
+    .adventure_activities{ 
+        padding:10px 40px;
+        grid-template-columns:repeat(1,1fr);
+        grid-template-rows: repeat(8,8rem);
+        grid-template-areas:
+        "act_1" 
+        "act_2"
+        "act_3" 
+        "act_4"
+        "act_5" 
+        "act_6"
+        "act_7" 
+        "act_8";
+        object-fit: cover;
+        padding: 10px;
+    }
+    .activity1{
+        grid-area: act_1;
+    }
+
+    .activity2{
+        grid-area: act_2;
+    }
+
+    .activity3{
+        grid-area: act_3;
+    }
+
+    .activity4{
+        grid-area: act_4;
+    }
+    .activity5{
+        grid-area: act_5;
+    }
+
+    .activity6{
+        grid-area: act_6;
+    }
+
+    .activity7{
+        grid-area: act_7;
+    }
+
+    .activity8{
+        grid-area: act_8;
+    }
+    
+    .container{
+        left:10px;
+        top:30px;
+    }
+ 
+    .content_page{
+        height:30rem;
+    }
+    .content_image{
+        height: 30rem;
+    }
+
+    .page_detail p{
+        font-size: 11px;
+    }
+
+    .icon{
+        font-size: 20px;
+    }
+    
+    .customers_name{
+        font-size: 10px;
+    }
+    .opinion_heading{
+        font-size: 16px;
+    }
+    
+   .opinion_button{
+    font-size: 8px;
+   }
+   
+    
+}
